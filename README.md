@@ -1,4 +1,4 @@
-Module 2 Challenge by Erica Rojas Wood
+## Module 2 Challenge by Erica Rojas Wood
 
 ### Calculation Subs
 The script is set up with a main Sub that can call all the required Sub Modules for calculating
