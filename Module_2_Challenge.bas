@@ -8,8 +8,23 @@ Unique:=True
 End Sub
 
 Sub setup_data_formatting()
+Dim MyRange As Range
 With Sheets("2018")
+lastRow = .Cells(Rows.Count, "L").End(xlUp).row
     Range("M2:M4001").NumberFormat = "0.00%"
+    Set MyRange = Range("L2", "M" & lastRow)
+    'Delete any formatting
+    MyRange.FormatConditions.Delete
+    
+    'Apply formatting
+    MyRange.FormatConditions.Add Type:=xlCellValue, Operator:=xlGreater, _
+        Formula1:="=0"
+    MyRange.FormatConditions(1).Interior.Color = vbGreen
+        
+    MyRange.FormatConditions.Add Type:=xlCellValue, Operator:=xlLess, _
+        Formula1:="=0"
+    MyRange.FormatConditions(2).Interior.Color = vbRed
+    
 End With
 End Sub
 
