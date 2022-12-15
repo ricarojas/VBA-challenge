@@ -10,3 +10,7 @@ The main sub is called calc_range_of_unique_ticker()
 
 ### get_unique_ticker_values()
 This is a standalone Sub which given a list of Ticker Symbols in Column A, it will generate a new list of unique Ticker Symbols. This helps the other Sub Modules run, as they use this unique list in the loops.
+
+
+### setup_data_formatting()
+Formats the data in the Percentage Change column so a percentage.
