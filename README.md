@@ -13,4 +13,4 @@ This is a standalone Sub which given a list of Ticker Symbols in Column A, it wi
 
 
 ### setup_data_formatting()
-Formats the data in the Percentage Change column so a percentage.
+Formats the data in the Percentage Change column to a percentage.
