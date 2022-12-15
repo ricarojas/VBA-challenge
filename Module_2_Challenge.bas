@@ -24,6 +24,8 @@ For Each I In .Range("K2", "K" & lastRow)
     startRow = .Range("A:A").Find(what:=I, after:=.Range("A1")).row
     endRow = .Range("A:A").Find(what:=I, after:=.Range("A1"), lookat:=xlWhole, searchdirection:=xlPrevious).row
     Call calc_total_volume(startRow, endRow)
+    Call calc_percentage_change(startRow, endRow)
+    Call calc_yearly_change(startRow, endRow)
 Next I
 End With
 End Sub
