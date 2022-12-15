@@ -24,4 +24,4 @@ To do this, simply remove the Call to 2 of the 3 Subs.
 ### Running against a Sheet that isn't 2018
 The sheet is hardcoded to 2018, but that is simple enougn to change.
 
-Fine **With Sheets("2018")** and replace 2018 with the sheet name you desire.
+Find **With Sheets("2018")** and replace 2018 with the sheet name you desire.
