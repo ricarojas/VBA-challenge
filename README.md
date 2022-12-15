@@ -14,6 +14,7 @@ This is a standalone Sub which given a list of Ticker Symbols in Column A, it wi
 
 ### setup_data_formatting()
 Formats the data in the Percentage Change column to a percentage.
+Adds in conditional formatting for Yearly Change & Percentage Change.
 
 ### Recommended way to run
 You can run the main Sub as mentioned in the Calculation Subs section, however it is best to only run each of the calcs individually via the main Sub.
